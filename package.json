@@ -1,0 +1,14 @@
+{
+  "name": "e-commerce-mern-from-scratch",
+  "version": "1.0.0",
+  "description": "shopping-cart-app-MERN",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "author": "Leroi_Dev",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
