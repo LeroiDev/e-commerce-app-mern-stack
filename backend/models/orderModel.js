@@ -7,7 +7,7 @@ const orderSchema = mongoose.Schema(
       required: true,
       ref: "User",
     },
-    oderItems: [
+    orderItems: [
       {
         name: { type: String, required: true },
         qty: { type: Number, required: true },
@@ -33,7 +33,7 @@ const orderSchema = mongoose.Schema(
     paymentResult: {
       id: { type: String },
       status: { type: String },
-      updateTime: { type: String },
+      update_time: { type: String },
       email_address: { type: String },
     },
     taxPrice: {
@@ -68,7 +68,9 @@ const orderSchema = mongoose.Schema(
       type: Date,
     },
   },
-  { timestamps: true }
+  {
+    timestamps: true,
+  }
 );
 
 const Order = mongoose.model("Order", orderSchema);
